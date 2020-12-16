@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,5 +16,16 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+Route::get('/list','ListEventController@index');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/buat','BuatEventController@index');
+Route::post('/add','BuatEventController@store')->name('add');
+Route::get('/detail/{id}','DetailController@index');
+Route::get('/myevent','MyEventController@index');
+Route::post('/addorder','OrderController@store')->name('addorder');
+Route::get('/order/{id}','OrderController@index');
+Route::get('/order/{id}/cetak_pdf','OrderController@cetak_pdf');
+Route::get('/eventku/{id}','EventkuController@index');
+Route::get('/myevent/delete/{id}','MyEventController@delete');
+Route::get('/myevent/edit/{id}','MyEventController@edit');
+Route::post('/update','MyEventController@update')->name('update');
