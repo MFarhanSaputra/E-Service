@@ -72,7 +72,7 @@ $(document).ready(function(){
                     <div class="card-body">
                         <h5 class="card-title">List Event</h5>
                         <p class="card-text">Disini kamu bisa melihat list berbagai event menarik yang akan hadir di kota-kota favorit.</p>
-                        <a href="#" class="btn btn-primary stretched-link float-right">List Event</a>
+                        <a href="/list" class="btn btn-primary stretched-link float-right">List Event</a>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                     </div>
